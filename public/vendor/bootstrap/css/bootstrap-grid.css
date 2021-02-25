@@ -964,6 +964,7 @@ html {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     max-width: 20%;
+    margin-top: 100px;
   }
   .row-cols-xl-6 > * {
     -ms-flex: 0 0 16.666667%;
@@ -3869,4 +3870,5 @@ html {
     margin-left: auto !important;
   }
 }
+
 /*# sourceMappingURL=bootstrap-grid.css.map */
