@@ -2,12 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const hbs = require('express-handlebars');
+const {mongoDbUrl} = require('./config/configuration');
 
 const app = express();
 
 
 //Configure Mongoose to Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/cms_site', {useNewUrlParser: true}).then(response => {
+mongoose.connect(mongoDbUrl, {useNewUrlParser: true}).then(response => {
     console.log('MongoDB Connected Succssesfully.');
 }).catch(err => {
     console.log('Dtabase Connection failed');
