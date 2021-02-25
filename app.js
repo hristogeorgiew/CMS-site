@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
 const hbs = require('express-handlebars');
-const {mongoDbUrl} = require('./config/configuration');
+const {mongoDbUrl, PORT} = require('./config/configuration');
 
 const app = express();
 
@@ -30,6 +30,6 @@ app.use('/', (req, res) => {
     res.render('default/index');
 })
 
-app.listen(7000, () => {
-    console.log('Server is running on port 7000');
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
