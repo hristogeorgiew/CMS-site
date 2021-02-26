@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const hbs = require('express-handlebars');
 const {mongoDbUrl, PORT} = require('./config/configuration');
+const flash = require('flash');
 
 const app = express();
 
