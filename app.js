@@ -27,7 +27,8 @@ app.set('view engine', 'handlebars');
 
 //routes
 const defaultRoutes = require('./routes/defaultRoutes');
-app.get('/', defaultRoutes);
+app.use('/', defaultRoutes);
+
 
 
 app.listen(PORT, () => {
