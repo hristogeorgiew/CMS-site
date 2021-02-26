@@ -28,7 +28,7 @@ app.set('view engine', 'handlebars');
 //routes
 const defaultRoutes = require('./routes/defaultRoutes');
 app.get('/', defaultRoutes);
-app.get('/pages', defaultRoutes);
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
